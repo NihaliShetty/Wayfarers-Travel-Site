@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		PhotoGallery
+	</title>
+    <link rel="icon" 
+     type="image/png" 
+     href="wayfarer2.jpg">
+	<link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+	<style type="text/css" >
+	.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background-color: #606748;
+}
+ 
+.menu {
+    width:1200px;
+    margin:0px auto;
+    background-color: #606748
+
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+
+header{
+
+    padding:2em;
+    color: white;
+    background-color: black;
+    text-align: left;
+	font-family:Comic Sans MS ,cursive, sans-serif;
+	height:100px;
+	
+}
+
+	
+	.button1{
+color:white;
+background-color:black;
+width:300px;
+height:50px;
+font-family: 'Fjalla One';
+font-size: 22px;
+
+margin-top:0px;
+margin-bottom:0px;
+cursor:pointer;
+border-color: black;
+}
+#buttontext{
+	margin-top: 7.5px;
+
+}
+.button1:hover{
+	opacity:0.4;
+}
+#article2{
+	position:absolute;
+	 margin-top:0px;
+    margin-left: 400px;
+   
+    padding: 1em;
+    overflow: hidden;
+   
+	
+}
+#article1{
+	
+
+
+ float:left;
+    width:750px;
+    margin: 0;
+	
+    
+}
+.photos{
+	width:850px;
+	height:500px;
+	background-color: black;
+	
+
+}
+
+.previous1 {
+    background-color: red;
+    margin-top: 150px;
+    position:absolute;
+    font-size: 100px;
+    margin-left: 30px;
+    
+   
+}
+
+.next1 {
+    position:absolute;
+    margin-top: 150px;
+    margin-left: 30px;
+    font-size: 100px;
+    background-color: red;
+   
+}
+.round {
+    border-radius: 75%;
+}
+body {
+
+   background-color: #000021;
+    background-size:cover;
+    background-repeat: no-repeat;
+	opacity:0.9;
+}
+
+#head{
+	color:white;
+background-color:black;
+
+font-family: 'Fjalla One';
+font-size: 22px;
+
+
+}
+#con:hover{
+	
+	opacity:1;
+	animation-name: resize ;
+	animation-duration: 1s;
+
+
+}
+@keyframes resize{
+	0%{opacity:0 }
+	50%{opacity:1}
+	100%{height: 235px;width:335px;}
+}
+
+	</style>
+</head>
+<body>
+	<header><h1>Wayfarers</h1>
+
+<div class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+            <li ><a href="webpro.html">Home</a></li>
+            <li>
+                <a href="#">Regions<span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="himalaya.html">Himalayas</a></li>
+                    <!-- <li><a href="eastern.html">Eastern Ghats</a></li> -->
+                    <li><a href="western.html">Western Ghats</a></li>
+                    <li><a href="central.html">Central India</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Upcoming Events<span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="uptreks.html">Treks</a></li>
+                    <li><a href="outdoor.html">Outdoor camps</a></li>
+                    <li><a href="rafting.html" class="current-item">River Rafting </a></li>
+                </ul>
+            </li>
+            <!--li><a href="#">History</a></li-->
+            <li ><a href="photogallery.php">Photo gallery</a></li>
+            <li><a href="contact.html">Contact and help</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+	<article id="article1" style="margin-left:50px;
+    width:300px;">
+	
+	<!--<div style="width:300px;background-color:yellow;margin-top:100px;height:150px;">
+		<p style="text-align: center;">WAYFARERS</p>
+	</div>-->
+	<div style="width:300px;height:500px;background-color: black;margin-top:50px;">
+		<form action="photogallery.php">
+		<button class="button1" type="submit" name="but" value="b1"><p id="buttontext">Chadar Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b2"><p id="buttontext">Chembar Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b3"><p id="buttontext">Kodachadari Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b4"><p id="buttontext">Mullayanagari Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b5"><p id="buttontext">Nagalapuram Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b6"><p id="buttontext">Tadiandamol Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b7"><p id="buttontext">Roopkund Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b8"><p id="buttontext">Mandangad Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b9"><p id="buttontext">Rajmachi Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b10"><p id="buttontext">Ratangal Trek</p></button>
+		<button class="button1" type="submit" name="but" value="b11"><p id="buttontext">Sadankphu Trek</p></button>
+	</form>
+	</div>
+</article>
+<article id="article2">
+
+<div id="head" style="background-color: black;width:850px;margin-left: 25px;margin-top:70px;height: 75px;">
+	<p style="margin-top:20px;position: absolute;margin-left: 350px;">{{name}}</p>
+</div>
+	<div class="photos" style="background-color: black;margin-left: 25px;">
+	<div style="background-color: #000021;margin-left: 75px;position: absolute;width:700px;">
+
+	<img id="con" src='{{item1}}' style="width:325px;height:225px;padding-left: 1em;">
+	<img id="con" src='{{item2}}' style="width:325px;height:225px;padding-left: 1em;">
+	<img id="con" src='{{item3}}' style="width:325px;height:225px;padding-top: 1em;padding-left: 1em;">
+	<img id="con" src='{{item4}}' style="width:325px;height:225px;padding-left: 1em;padding-top: 1em;">
+</div>
+
+
+		</div>
+	
+</article>
+	
+	<script>
+
+
+
+ 
+
+</script>
+
+
+
+</body>
+</html>

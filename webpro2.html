@@ -1,0 +1,331 @@
+<html>
+<head>
+	<title>Wayfarers</title>
+  <link rel="icon" 
+     type="image/png" 
+     href="wayfarer2.jpg">
+	<link rel="stylesheet" type="text/css" href="trialn.css">
+	<style >
+		
+		.mySlides {display:none}
+
+		.clearfix:after {
+    			display:block;
+    			clear:both;
+				}
+		/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  //max-height: 100px;
+  position: relative;
+  margin: left 0px;
+}
+
+/* Caption text */
+.text {
+  color: khaki;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+#heading{
+			font-size: 50px;
+		}
+label{
+  color:black;
+}
+
+//****************/
+
+
+
+
+	</style>
+
+</head>
+<body style="background-color:#f5d142; ">
+<header  style="position: fixed top 0px;"><p id="heading">Wayfarers</p>
+
+<div class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+            <li class="current-item"><a href="webpro.html">Home</a></li>
+            <li>
+                <a href="#">Regions<span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="himalaya.html">The Himalayas and the ladhak region</a></li>
+                    <li><a href="western.html">Western Ghats</a></li>
+                    <li><a href="central.html">Central India</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Upcoming Events<span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="uptreks.html">Treks</a></li>
+                    <li><a href="outdoor.html">Outdoor camps</a></li>
+                    <li><a href="rafting.html">Rafting and stationary camps</a></li>
+                </ul>
+            </li>
+           
+            <li ><a href="photogallery.php">Photo gallery</a></li>
+            <li><a href="contact.html">Contact and help</a></li>
+        </ul>
+    </nav>
+</div>
+
+<button id="log" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button id="reg" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+<form action="login1.php">
+<button id='id03' style="width:auto;display:none;" name="logout" value="lg" type="submit" >Logout</button>
+</form>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login1.php" style="padding:1em;">
+    
+
+    <div class="container">
+      <label ><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname2" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw2" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked" style="color:black;"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" style="color:black;">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal">
+  
+  <form class="modal-content" name="register" action="register.php" style="padding: 1em;">
+    
+
+    <div class="container">
+      <label><b>Enter Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Enter Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Re-enter Password</b></label>
+      <input type="password" placeholder="Re-enter Password" name="repsw" required>
+
+      
+      <label><b>Enter Email-Id</b></label>
+      <input type="email" placeholder="Enter email" name="ema" required>
+      
+      <label><b>Enter Phone no.</b></label>
+      <input type="tel" placeholder="Enter phone" name="pho" required>
+        
+      <button type="submit">Submit</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+</header>
+<br><br>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="home1.jpg" style="width:1300px; height: 400px;" >
+  <div class="text">Do more than just exist</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="home2.jpg" style="width:1300px; height: 400px;">
+  <div class="text">Hike  More <br> Worry Less</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="home3.jpg" style="width:1300px; height: 400px;">
+  <div class="text">Collect Moments <br> Not Things </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="home4.jpg" style="width:1300px; height: 400px;">
+  <div class="text">To Travel Is To Live</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="home5.jpg" style="width:1300px; height: 400px;">
+  <div class="text">Wander Often <br> Wonder Always</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+
+var modal = document.getElementById('id01');
+var modal2= document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function CheckPassword()
+{
+
+var password=register.psw.value
+var confirm=register.repsw.value
+if(password==confirm)
+{
+return true;
+}
+else
+{
+alert("Passwords don't match");
+}
+}
+
+/*function logout()
+{
+  if('{{login}}'=="true")
+  {
+    alert("hello");
+    document.getElementById('id03').style.display='block';
+    
+  }
+  
+}*/
+
+if ('{{login}}'== "true")
+{
+  document.getElementById("id03").style.display = "block";
+  document.getElementById("log").style.display = "none";
+  document.getElementById("reg").style.display = "none";
+}
+
+if('{{logout}}'=="true")
+{
+  document.getElementById("id03").style.display="none";
+  document.getElementById("log").style.display="block";
+  document.getElementById("reg").style.display="block";
+}
+
+// if('{{set}}'=="true")
+// {
+//   document.getElementById("id03").style.display = "block";
+//   document.getElementById("log").style.display = "none";
+//   document.getElementById("reg").style.display = "none";
+
+// }
+// else
+// {
+//   document.getElementById("id03").style.display="none";
+//   document.getElementById("log").style.display="block";
+//   document.getElementById("reg").style.display="block";
+
+// }
+
+</script>
+
+<!-- <article id="article2">
+<div id="div3">
+<form action="login1.php" align="center">
+<input type="date">
+<br>
+<label ><font color="white">Adult</font></label>
+<input type="number">
+<p><font color="white">Need Assistance?</font></p>
+<input type="text" placeholder="Enter Name">
+<br>
+<input type="email" placeholder="Enter Email-Id">
+<br>
+<input type="tel" placeholder="Enter Phone no.">
+<br> 
+<br>
+<label><font color="white"> Name</font></label><br>
+<input type="text" placeholder="Enter name" name="usn">
+<br>
+<label><font color="white"> Password</font></label><br>
+<input type="password" name="psd" placeholder="Enter password">
+<br>
+<button id="button1" type="submit">Login</button>
+<br>
+<p ><font color="white">forgot password?</font></p> <br>
+<button id="button2" >Register</button>
+</form>
+</div>
+
+</article>  -->
+</body>
+</html>

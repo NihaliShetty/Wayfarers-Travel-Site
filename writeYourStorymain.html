@@ -1,0 +1,235 @@
+
+
+<html>
+<head>
+<title>Treks</title>
+<link rel="icon" 
+     type="image/png" 
+     href="wayfarer2.jpg">
+<script type="text/javascript" src="jQuery 3.2.1.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="writeStory.css">
+
+</head>
+<body>
+<header><h1>Wayfarers</h1>
+
+<div class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+            <li ><a href="webpro.html">Home</a></li>
+            <li>
+                <a href="#" class="current-item">Regions<span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="himalaya.html"> Himalayas</a></li>
+                    <!-- <li><a href="eastern.html">Eastern Ghats</a></li> -->
+                    <li><a href="western.html">Western Ghats</a></li>
+                    <li><a href="central.html">Central India</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Upcoming Events<span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="uptreks.html">Treks</a></li>
+                    <li><a href="outdoor.html">Outdoor camps</a></li>
+                    <li><a href="rafting.html">River Rafting</a></li>
+                </ul>
+            </li>
+            <!--li><a href="#">History</a></li-->
+            <li ><a href="photogallery.php">Photo gallery</a></li>
+            <li><a href="contact.html">Contact and help</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<br><br>
+<div class="relative">
+		
+		<img id="con" src="{{pic1}}" style="width:500px;height:350px; margin:0 auto;">
+		<br>
+		<div align="center">
+		<a href="#" class="previous round" onclick="image.prev('con')">&#8249;</a>
+		<a href="#" class="next round" onclick="image.next('con')" >&#8250;</a>
+		</div>
+	<div class="absolute" >
+	
+	<h3 style="font-family:Comic Sans MS, cursive, sans-serif;">{{name}}</h3>
+	<fieldset>
+<p>
+9 Days | 8 Nights 
+</p>
+</fieldset>
+<ul style="font-size:17;font-family:Tahoma, Geneva, sans-serif;">
+<li>Cashback 2000*</li>
+<li>Customized Packages for Groups</li>
+<li>Unbeatable Price</li>
+</ul>
+<dl>
+<dt style="font-size:17;font-family:Comic Sans MS, cursive, sans-serif;"><b>Starting From</b></dt>
+<dd><h1 style="color:orange;">Rs.{{money}}</h1></dd>
+</dl>
+	
+	
+</div>
+</div>
+<br><br>
+
+
+<article id="article1">
+<div class="transbox">
+<div style="padding-left:20px;">
+
+<h2 style="font-family:Comic sans MS,cursive,sans serif;font-size:25;color:white;text-align:center;">Includes</h2>
+<p style="font-size:20;color:white;font-family:Comic sans MS,cursive,sans serif;">
+Meals | Pick-Up & Drop | Activities | Guide | Accommodation</p>
+
+<p style="font-family:Comic sans MS,cursive,sans serif;font-size:25;color:white;">Over View:</p>
+<ul style="font-size:20;color:white;font-family:Comic sans MS,cursive,sans serif;">
+<li>Trip Starting From: Leh</li>
+
+<li>Trip Location: Kargil</li>
+
+<li>Available Group Departure:
+<ul><li>Jan: 13,14,20,21,26,27,28</li>
+<li>Feb:  2,3</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- <p style="font-family:Comic sans MS,cursive,sans serif;font-size:25;color:white;">
+Quick Facts:</p>
+<ul >
+<li>Temperature: 15 to 20 degrees (during the day) and -25 to -35 degrees (during the night)</li>
+
+<li>Trekking Distance:  75km</li>
+
+<li>Maximum Altitude: 11,123ft</li>
+
+<li>Difficulty Level: Difficult </li>
+
+
+</ul>
+ -->
+
+
+  
+
+<div id="okay">
+<form style="width:700px;" onsubmit="update()" name="writeyourstory" style=" 
+height:270px;
+background-color:white;
+margin:0 auto;border-radius:25px;"
+>
+
+<p style="font-size:25;font-family:Comic Sans MS, cursive, sanstory">
+<div style="
+width:700px;font-style:MS sans-serif;text-align:center;color:orange;font-size: 40;">
+Write Your Story
+</p>
+
+<textarea name="text" rows="10" cols="97" placeholder=" Share your experience" style="margin:0 auto;border-radius:20px;" id="review"></textarea>
+<input id="button2" name="publish" value="Publish" type="button" onclick="review_submit();" />
+</div>
+
+</form>
+
+
+  </div>
+<h1 style="font-style:MS comic sans;color:orange;">STORIES</h1>
+
+{% for item in okay %}
+
+
+<div style="background-color:khaki;width:700px;">
+  <!-- <h1>okay</h1> -->
+  <p style="color:brown;">*{{item.0}}</p>
+  <p style="color:black;font-size: 20;">{{item.1}}</p>
+  
+  </div>
+  
+
+{% endfor %}
+
+</div>
+</div>
+</article>
+
+<article id="article2">
+<div id="div3">
+
+<form action="registertrek.php" align="center">
+  <br>
+  <h1 style="font-family: sans-serif;color:white;"> REGISTER FOR TREK</h1>
+<input name="tdate"type="date">
+<br>
+<label ><font color="white">Adult</font></label>
+<input name="tadult" type="number">
+<p><font color="white">Need Assistance?</font></p>
+<input name="tname" type="text" placeholder="Enter Name">
+<br>
+<input name="tmail" type="email" placeholder="Enter Email-Id">
+<br>
+<input name="tnum" type="tel" placeholder="Enter Phone no.">
+<br>
+<button id="button1" type="submit" name="booktrek" value="bk">REGISTER</button>
+</form>
+</div>
+
+</article>
+
+
+
+
+		
+   
+<script>
+var image= new ImageCollection(['{{pic1}}','{{pic2}}','{{pic3}}'])
+function ImageCollection(images) {
+     this.images = images;
+     this.i = 0;
+     this.next = function(imgId) {
+     var img = document.getElementById(imgId);
+     this.i++;
+     if (this.i == images.length )
+         this.i = 0;
+         img.src = images[this.i];
+     }
+     this.prev = function(imgId) {
+     var img = document.getElementById(imgId);
+     this.i--;
+     if (this.i <= 0)
+         this.i = images.length -1;
+         img.src = images[this.i];
+     }
+ }
+ 
+ 
+ 
+function review_submit() {
+  // body...
+  var review=document.getElementById("review");
+var text = review.value;
+// alert(text);
+$.ajax({
+  type:"POST",
+  url:"review.php",
+  data:{review:text, trek:'{{ name }}'},
+  success:function(response){
+    review.value = "";
+
+    
+  }
+});
+}
+
+
+
+</script>
+</body>
+</html>
+
+</html>
